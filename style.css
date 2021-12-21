@@ -3,7 +3,6 @@
     text-align:center;
     text-emphasis-style: bold;
 }
-
 .navbar{
     margin:20px;
     padding:20px;
@@ -14,21 +13,44 @@
     color: white;
 } 
 
+body{
+      background-image: url('http://clipart-library.com/images/pc7rqpLzi.jpg');
+}
+
+.input-group-rounded .input-group-field {
+    border-radius: 5000px;
+  }
+  
+  .input-group-rounded .input-group-button .button {
+    border-radius: 5000px;
+    font-size: 0.8rem;
+  }
+    
+  
+  
 .card{
     display:inline-block;
     margin:50px;
     padding: 20px;
 }
 
+#spideyCard{
+    background-color: black;
+    color: white;
+}
+
 #thorCard{
     background-color: blue;
+    color: white;
 }
 
 
 #pantherCard{
     background-color: rgb(46, 3, 75);
+    color: white;
 }
 
-#widowCard{
+#x-MenCard{
     background-color: red;
+    color: white;
 }
