@@ -10,7 +10,7 @@ var getComic =()=>{
   var timeStamp=Date.now()
   console.log(timeStamp)
 
-  fetch("https://gateway.marvel.com/v1/public/characters?apikey=0b48117c76f758b006d4965cec8c77de&hash=5dcc745e0dd3368d15664b831a173cde&ts=1640054832677&limit=100&offset=100")
+  fetch("https://gateway.marvel.com/v1/public/characters?apikey=0b48117c76f758b006d4965cec8c77de&hash=5dcc745e0dd3368d15664b831a173cde&ts=1640054832677&limit=100")
 
   
     .then(function (response) {
@@ -147,5 +147,17 @@ getBlackPanther()
 getComic()
 getParker()
 getThor()
+
+
+mapboxgl.accessToken =
+"pk.eyJ1Ijoia2dhcnplbGxvbmkiLCJhIjoiY2t4Z2ZiNGFzMXpubzJ2c3RmajgwdDhvbCJ9.TUr86IuVKdUCu6QQArj6aw";
+const map = new mapboxgl.Map({
+container: 'map', // container ID
+style: 'mapbox://styles/mapbox/streets-v11', // style URL
+center: [-74.5, 40], // starting position [lng, lat]
+zoom: 9 // starting zoom
+});
+
 getXmen()
+
 
