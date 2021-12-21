@@ -33,18 +33,22 @@
 }
 
 #spideyCard{
-    background-color: silver;
+    background-color: black;
+    color: white;
 }
 
 #thorCard{
     background-color: blue;
+    color: white;
 }
 
 
 #pantherCard{
     background-color: rgb(46, 3, 75);
+    color: white;
 }
 
-#widowCard{
+#x-MenCard{
     background-color: red;
+    color: white;
 }
