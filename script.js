@@ -1,3 +1,4 @@
+
 var offset=0
 var spideyCardEl=document.getElementById("spideyCard")
 var img404="http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available/portrait_uncanny.jpg"
@@ -6,7 +7,10 @@ var thorCardEl=document.getElementById("thorCard")
 var getComic =()=>{
   var timeStamp=Date.now()
   console.log(timeStamp)
+
   fetch("https://gateway.marvel.com/v1/public/characters?apikey=0b48117c76f758b006d4965cec8c77de&hash=5dcc745e0dd3368d15664b831a173cde&ts=1640054832677&limit=100&offset=1350")
+
+
   
     .then(function (response) {
         return response.json();
@@ -45,6 +49,7 @@ function getParker(){
         
       });
 }
+
 
 function getThor(){
   var id=1009664
