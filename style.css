@@ -14,21 +14,41 @@
     color: white;
 } 
 
+
+.input-group-rounded .input-group-field {
+    border-radius: 5000px;
+  }
+  
+  .input-group-rounded .input-group-button .button {
+    border-radius: 5000px;
+    font-size: 0.8rem;
+  }
+    
+  
+  
 .card{
     display:inline-block;
     margin:50px;
     padding: 20px;
 }
 
+#spideyCard{
+    background-color: black;
+    color: white;
+}
+
 #thorCard{
     background-color: blue;
+    color: white;
 }
 
 
 #pantherCard{
     background-color: rgb(46, 3, 75);
+    color: white;
 }
 
-#widowCard{
+#x-MenCard{
     background-color: red;
+    color: white;
 }
