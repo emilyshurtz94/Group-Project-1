@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-var getComics = fetch("https://gateway.marvel.com:443/v1/public/characters/marvel/comics?apikey=be0e3fcf555a0c55bcc2dcf259693ba6c0f377c1")
-=======
 
 var offset=0
 var spideyCardEl=document.getElementById("spideyCard")
@@ -10,7 +7,6 @@ var getComic =()=>{
   console.log(timeStamp)
   fetch("https://gateway.marvel.com/v1/public/characters?apikey=0b48117c76f758b006d4965cec8c77de&hash=5dcc745e0dd3368d15664b831a173cde&ts=1640054832677&limit=100&offset=1200")
 
->>>>>>> 5df3241b992ec734338c79fd250da42adac5ef8c
   
     .then(function (response) {
         return response.json();
@@ -18,9 +14,6 @@ var getComic =()=>{
       .then(function (data) {
         console.log (data);
       });
-<<<<<<< HEAD
-      
-=======
 }  
 
 function getParker(){
@@ -54,5 +47,4 @@ function getParker(){
 }
 
 getParker()
->>>>>>> 5df3241b992ec734338c79fd250da42adac5ef8c
 
