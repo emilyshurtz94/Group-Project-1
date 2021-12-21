@@ -1,4 +1,3 @@
-
 var offset=0
 var spideyCardEl=document.getElementById("spideyCard")
 var img404="http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available/portrait_uncanny.jpg"
