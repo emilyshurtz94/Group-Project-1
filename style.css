@@ -3,7 +3,6 @@
     text-align:center;
     text-emphasis-style: bold;
 }
-
 .navbar{
     margin:20px;
     padding:20px;
@@ -14,6 +13,9 @@
     color: white;
 } 
 
+body{
+      background-image: url('http://clipart-library.com/images/pc7rqpLzi.jpg');
+}
 
 .input-group-rounded .input-group-field {
     border-radius: 5000px;
