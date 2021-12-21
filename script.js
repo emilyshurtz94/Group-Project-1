@@ -5,6 +5,7 @@ var thorCardEl=document.getElementById("thorCard")
 var pantherCardEl=document.getElementById("pantherCard")
 var xMenCardEl=document.getElementById("x-MenCard")
 
+
 var getComic =()=>{
   var timeStamp=Date.now()
   console.log(timeStamp)
@@ -80,6 +81,7 @@ function getThor(){
         
       });
 }
+
 
 function getBlackPanther(){
   var id=1009187
