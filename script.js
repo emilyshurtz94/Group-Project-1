@@ -7,7 +7,9 @@ var pantherCardEl=document.getElementById("pantherCard")
 var getComic =()=>{
   var timeStamp=Date.now()
   console.log(timeStamp)
+
   fetch("https://gateway.marvel.com/v1/public/characters?apikey=0b48117c76f758b006d4965cec8c77de&hash=5dcc745e0dd3368d15664b831a173cde&ts=1640054832677&limit=100&offset=100")
+
   
     .then(function (response) {
         return response.json();
@@ -46,6 +48,7 @@ function getParker(){
         
       });
 }
+
 
 function getThor(){
   var id=1009664
