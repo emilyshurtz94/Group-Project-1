@@ -3,6 +3,7 @@ var spideyCardEl=document.getElementById("spideyCard")
 var img404="http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available/portrait_uncanny.jpg"
 var thorCardEl=document.getElementById("thorCard")
 
+
 var getComic =()=>{
   var timeStamp=Date.now()
   console.log(timeStamp)
@@ -79,7 +80,6 @@ function getThor(){
         
       });
 }
-
 // getComic()
 getParker()
 getThor()
