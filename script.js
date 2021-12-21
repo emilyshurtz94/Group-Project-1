@@ -3,7 +3,7 @@ var spideyCardEl=document.getElementById("spideyCard")
 var img404="http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available/portrait_uncanny.jpg"
 var thorCardEl=document.getElementById("thorCard")
 var pantherCardEl=document.getElementById("pantherCard")
-var widowCardEl=document.getElementById("widowCard")
+var xMenCardEl=document.getElementById("x-MenCard")
 
 var getComic =()=>{
   var timeStamp=Date.now()
@@ -108,7 +108,7 @@ function getBlackPanther(){
       });
 }
 
-function getBlackWidow(){
+function getXmen(){
   var id=1009188
   fetch("https://gateway.marvel.com/v1/public/characters/"+id+"/comics?apikey=0b48117c76f758b006d4965cec8c77de&hash=5dcc745e0dd3368d15664b831a173cde&ts=1640054832677&limit=20&offset="+offset)
 
@@ -132,7 +132,7 @@ function getBlackWidow(){
           imgEl.setAttribute("src", imgUrl)
           imgEl.setAttribute("alt", "work")
           aEl.append(imgEl)
-          widowCardEl.append(aEl)  
+          xMenCardEl.append(aEl)  
         }
         
       });
@@ -142,4 +142,4 @@ getBlackPanther()
 getComic()
 getParker()
 getThor()
-getBlackWidow()
+getXmen()
