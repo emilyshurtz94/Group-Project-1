@@ -147,8 +147,6 @@ getBlackPanther()
 getComic()
 getParker()
 getThor()
-<<<<<<< HEAD
-<<<<<<< HEAD
 
 mapboxgl.accessToken = "pk.eyJ1Ijoia2dhcnplbGxvbmkiLCJhIjoiY2t4Z2ZiNGFzMXpubzJ2c3RmajgwdDhvbCJ9.TUr86IuVKdUCu6QQArj6aw";
 var map = new mapboxgl.Map({
@@ -160,12 +158,8 @@ var map = new mapboxgl.Map({
 var marker = new mapboxgl.Marker()
 .setLngLat([-21.9270884, 64.1436456])
 .addTo(map);
-=======
+
 getXmen()
-
->>>>>>> b10d15da2d641a9eb957203d0cec726aa89deea9
-=======
-
 
 mapboxgl.accessToken =
 "pk.eyJ1Ijoia2dhcnplbGxvbmkiLCJhIjoiY2t4Z2ZiNGFzMXpubzJ2c3RmajgwdDhvbCJ9.TUr86IuVKdUCu6QQArj6aw";
@@ -178,5 +172,14 @@ zoom: 9 // starting zoom
 
 getXmen()
 
+mapboxgl.accessToken =
+"pk.eyJ1Ijoia2dhcnplbGxvbmkiLCJhIjoiY2t4Z2ZiNGFzMXpubzJ2c3RmajgwdDhvbCJ9.TUr86IuVKdUCu6QQArj6aw";
+const map = new mapboxgl.Map({
+container: 'map', // container ID
+style: 'mapbox://styles/mapbox/streets-v11', // style URL
+center: [-74.5, 40], // starting position [lng, lat]
+zoom: 9 // starting zoom
+});
 
->>>>>>> 9ea0298bddaadffcbb3eaf7ed9df67b73ca931f3
+getXmen()
+
