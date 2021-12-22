@@ -148,6 +148,18 @@ getComic()
 getParker()
 getThor()
 
+mapboxgl.accessToken = "pk.eyJ1Ijoia2dhcnplbGxvbmkiLCJhIjoiY2t4Z2ZiNGFzMXpubzJ2c3RmajgwdDhvbCJ9.TUr86IuVKdUCu6QQArj6aw";
+var map = new mapboxgl.Map({
+  container: 'map', // HTML container id
+  style: 'mapbox://styles/mapbox/streets-v9', // style URL
+  center: [-21.9270884, 64.1436456], // starting position as [lng, lat]
+  zoom: 13
+});
+var marker = new mapboxgl.Marker()
+.setLngLat([-21.9270884, 64.1436456])
+.addTo(map);
+
+getXmen()
 
 mapboxgl.accessToken =
 "pk.eyJ1Ijoia2dhcnplbGxvbmkiLCJhIjoiY2t4Z2ZiNGFzMXpubzJ2c3RmajgwdDhvbCJ9.TUr86IuVKdUCu6QQArj6aw";
@@ -160,4 +172,14 @@ zoom: 9 // starting zoom
 
 getXmen()
 
+mapboxgl.accessToken =
+"pk.eyJ1Ijoia2dhcnplbGxvbmkiLCJhIjoiY2t4Z2ZiNGFzMXpubzJ2c3RmajgwdDhvbCJ9.TUr86IuVKdUCu6QQArj6aw";
+const map = new mapboxgl.Map({
+container: 'map', // container ID
+style: 'mapbox://styles/mapbox/streets-v11', // style URL
+center: [-74.5, 40], // starting position [lng, lat]
+zoom: 9 // starting zoom
+});
+
+getXmen()
 
