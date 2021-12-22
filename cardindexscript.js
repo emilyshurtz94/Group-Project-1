@@ -3,6 +3,7 @@ const nextPageEl= document.getElementById("nextPage")
 const previousPageEl= document.getElementById("previousPage")
 const currentPageEl=document.getElementById("current")
 
+
 function getCharacter(id,offset,charName){
 cardEl.innerHTML=""
     var img404="http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available/portrait_uncanny.jpg"
@@ -65,3 +66,4 @@ previousPageEl.addEventListener("click",function(event){
      getCharacter(id,newOffset,charName)
     
 })
+getCharacter(id,0,charName)
