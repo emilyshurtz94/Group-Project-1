@@ -1,7 +1,11 @@
 const cardEl=document.getElementById("card-comics")
 const nextPageEl= document.getElementById("nextPage")
 const previousPageEl= document.getElementById("previousPage")
+
 const containerEl= document.getElementById("comic-container")
+
+const currentPageEl=document.getElementById("current")
+
 function getCharacter(id,offset,charName){
 cardEl.innerHTML=""
     var img404="http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available/portrait_uncanny.jpg"
@@ -38,7 +42,14 @@ cardEl.innerHTML=""
           
         });
   } 
-//   getCharacter(1009610,0,"Spider-man")
+  function currentPage(event){
+    var currentPage=event.target.parentNode.parentElement
+    var offset= parseInt(currentPage.attributes[0].value)
+   currentPage.children[0].classList.remove("disabled")
+   var newOffset= offset+20
+   currentPage.attributes[0].value=newOffset
+   getCharacter(id,newOffset,charName)
+  }
 
 nextPageEl.addEventListener("click",function(event){
     var nextPage=event.target.parentNode.parentElement
@@ -46,7 +57,7 @@ nextPageEl.addEventListener("click",function(event){
    nextPage.children[0].classList.remove("disabled")
    var newOffset= offset+20
    nextPage.attributes[0].value=newOffset
-   getCharacter(1009610,newOffset,"Spider-man")
+   getCharacter(id,newOffset,charName)
 })
 
     
@@ -57,8 +68,9 @@ previousPageEl.addEventListener("click",function(event){
     var offset= parseInt(previousPage.attributes[0].value)
     var newOffset= offset-20
     previousPage.attributes[0].value=newOffset
-     getCharacter(1009610,newOffset,"Spider-man")
+     getCharacter(id,newOffset,charName)
     
 })
+
 getCharacter(1009610,0,"Spider-man")
 
