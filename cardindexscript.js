@@ -6,6 +6,7 @@ const containerEl= document.getElementById("comic-container")
 
 const currentPageEl=document.getElementById("current")
 
+
 function getCharacter(id,offset,charName){
 cardEl.innerHTML=""
     var img404="http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available/portrait_uncanny.jpg"
@@ -72,5 +73,7 @@ previousPageEl.addEventListener("click",function(event){
     
 })
 
-getCharacter(1009610,0,"Spider-man")
+getCharacter(id,0,charName)
+=======
 
+getCharacter(1009610,0,"Spider-man")
