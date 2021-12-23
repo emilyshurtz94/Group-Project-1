@@ -1,6 +1,9 @@
 const cardEl=document.getElementById("card-comics")
 const nextPageEl= document.getElementById("nextPage")
 const previousPageEl= document.getElementById("previousPage")
+
+const containerEl= document.getElementById("comic-container")
+
 const currentPageEl=document.getElementById("current")
 
 
@@ -15,6 +18,7 @@ cardEl.innerHTML=""
         .then(function (data) {
           console.log (data);
           var h1El=document.createElement("h1")
+          h1El.classList.add("spidey-card")
           h1El.textContent=charName
           cardEl.append(h1El)
           for (var i=0; i<data.data.results.length; i++){
@@ -32,7 +36,9 @@ cardEl.innerHTML=""
             imgEl.setAttribute("src", imgUrl)
             imgEl.setAttribute("alt", "work")
             aEl.append(imgEl)
-            cardEl.append(aEl)  
+            //cardEl.append(aEl)
+            containerEl.append(aEl)
+            console.log (containerEl)  
           }
           
         });
@@ -66,4 +72,8 @@ previousPageEl.addEventListener("click",function(event){
      getCharacter(id,newOffset,charName)
     
 })
+
 getCharacter(id,0,charName)
+=======
+
+getCharacter(1009610,0,"Spider-man")
