@@ -4,12 +4,15 @@
     text-emphasis-style: bold;
 }
 .navbar{
+  
+  font-weight: bold;
+  font-family: marvel;
     margin:20px;
     padding:20px;
     display: flex;
     justify-content: center;
-    font-size: 100px;
-    background-color: red;
+    font-size: 5rem;
+    background-color: rgb(218, 24, 24);
     color: white;
 } 
 
@@ -41,22 +44,26 @@ body{
 }
 
 #spideyCard{
+    font-family: marvel;
     background-color: black;
     color: white;
 }
 
 #thorCard{
+  font-family: marvel;
     background-color: blue;
     color: white;
 }
 
 
 #pantherCard{
+  font-family: marvel;
     background-color: rgb(46, 3, 75);
     color: white;
 }
 
 #x-MenCard{
+  font-family: marvel;
     background-color: red;
     color: white;
 }
