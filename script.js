@@ -63,23 +63,24 @@ const currentPageEl=document.getElementById("current")
                 
               });
         } 
-      nextPageEl.addEventListener("click",function(event){
-          var nextPage=event.target.parentNode.parentElement
-          var offset= parseInt(nextPage.attributes[0].value)
-         nextPage.children[0].classList.remove("disabled")
-         var newOffset= offset+20
-         nextPage.attributes[0].value=newOffset
-         getParker(1009610,newOffset,"Spider-man")
-      })
-      previousPageEl.addEventListener("click",function(event){
-          var previousPage=event.target.parentElement
-          console.log(previousPage)
-          var offset= parseInt(previousPage.attributes[0].value)
-          var newOffset= offset-20
-          previousPage.attributes[0].value=newOffset
-           getParker(1009610,newOffset,"Spider-man")
+      // nextPageEl.addEventListener("click",function(event){
+      //     var nextPage=event.target.parentNode.parentElement
+      //     var offset= parseInt(nextPage.attributes[0].value)
+      //    nextPage.children[0].classList.remove("disabled")
+      //    var newOffset= offset+20
+      //    nextPage.attributes[0].value=newOffset
+      //    getParker(1009610,newOffset,"Spider-man")
+      // })
+      // previousPageEl.addEventListener("click",function(event){
+      //     var previousPage=event.target.parentElement
+      //     console.log(previousPage)
+      //     var offset= parseInt(previousPage.attributes[0].value)
+      //     var newOffset= offset-20
+      //     previousPage.attributes[0].value=newOffset
+      //      getParker(1009610,newOffset,"Spider-man")
           
-      })
+      // })
+
       thorCardEl.addEventListener("click",function(){
         spideyCardEl.style.display="none";
         thorCardEl.style.display="none";
@@ -88,6 +89,7 @@ const currentPageEl=document.getElementById("current")
        cardEl.style.display = "block";
          getThor(1009664,0,"Thor")
        })
+
        function getThor(id,offset,charName){
          cardEl.innerHTML=""
              var img404="http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available/portrait_uncanny.jpg"
@@ -121,23 +123,23 @@ const currentPageEl=document.getElementById("current")
                    
                  });
            } 
-         nextPageEl.addEventListener("click",function(event){
-             var nextPage=event.target.parentNode.parentElement
-             var offset= parseInt(nextPage.attributes[0].value)
-            nextPage.children[0].classList.remove("disabled")
-            var newOffset= offset+20
-            nextPage.attributes[0].value=newOffset
-            getThor(1009664,newOffset,"Thor")
-         })
-         previousPageEl.addEventListener("click",function(event){
-             var previousPage=event.target.parentElement
-             console.log(previousPage)
-             var offset= parseInt(previousPage.attributes[0].value)
-             var newOffset= offset-20
-             previousPage.attributes[0].value=newOffset
-              getThor(1009664,newOffset,"Thor")
+        //  nextPageEl.addEventListener("click",function(event){
+        //      var nextPage=event.target.parentNode.parentElement
+        //      var offset= parseInt(nextPage.attributes[0].value)
+        //     nextPage.children[0].classList.remove("disabled")
+        //     var newOffset= offset+20
+        //     nextPage.attributes[0].value=newOffset
+        //     getThor(1009664,newOffset,"Thor")
+        //  })
+        //  previousPageEl.addEventListener("click",function(event){
+        //      var previousPage=event.target.parentElement
+        //      console.log(previousPage)
+        //      var offset= parseInt(previousPage.attributes[0].value)
+        //      var newOffset= offset-20
+        //      previousPage.attributes[0].value=newOffset
+        //       getThor(1009664,newOffset,"Thor")
              
-         })
+        //  })
          pantherCardEl.addEventListener("click",function(){
           spideyCardEl.style.display="none";
           thorCardEl.style.display="none";
@@ -179,31 +181,32 @@ const currentPageEl=document.getElementById("current")
                      
                    });
              } 
-           nextPageEl.addEventListener("click",function(event){
-               var nextPage=event.target.parentNode.parentElement
-               var offset= parseInt(nextPage.attributes[0].value)
-              nextPage.children[0].classList.remove("disabled")
-              var newOffset= offset+20
-              nextPage.attributes[0].value=newOffset
-              getPanther(1009187,newOffset,"Black Panther")
-           })
-           previousPageEl.addEventListener("click",function(event){
-               var previousPage=event.target.parentElement
-               console.log(previousPage)
-               var offset= parseInt(previousPage.attributes[0].value)
-               var newOffset= offset-20
-               previousPage.attributes[0].value=newOffset
-                getPanther(1009187,newOffset,"Black Panther")
+          //  nextPageEl.addEventListener("click",function(event){
+          //      var nextPage=event.target.parentNode.parentElement
+          //      var offset= parseInt(nextPage.attributes[0].value)
+          //     nextPage.children[0].classList.remove("disabled")
+          //     var newOffset= offset+20
+          //     nextPage.attributes[0].value=newOffset
+          //     getPanther(1009187,newOffset,"Black Panther")
+          //  })
+          //  previousPageEl.addEventListener("click",function(event){
+          //      var previousPage=event.target.parentElement
+          //      console.log(previousPage)
+          //      var offset= parseInt(previousPage.attributes[0].value)
+          //      var newOffset= offset-20
+          //      previousPage.attributes[0].value=newOffset
+          //       getPanther(1009187,newOffset,"Black Panther")
                
-           })
+          //  })
            xMenCardEl.addEventListener("click",function(){
             spideyCardEl.style.display="none";
             thorCardEl.style.display="none";
             pantherCardEl.style.display="none";
             xMenCardEl.style.display="none";
-           cardEl.style.display = "block";
+            cardEl.style.display = "block";
              getXmen(1009188,0,"X-men")
            })
+
            function getXmen(id,offset,charName){
              cardEl.innerHTML=""
                  var img404="http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available/portrait_uncanny.jpg"
@@ -237,23 +240,23 @@ const currentPageEl=document.getElementById("current")
                        
                      });
                } 
-             nextPageEl.addEventListener("click",function(event){
-                 var nextPage=event.target.parentNode.parentElement
-                 var offset= parseInt(nextPage.attributes[0].value)
-                nextPage.children[0].classList.remove("disabled")
-                var newOffset= offset+20
-                nextPage.attributes[0].value=newOffset
-                getThor(1009188,newOffset,"Thor")
-             })
-             previousPageEl.addEventListener("click",function(event){
-                 var previousPage=event.target.parentElement
-                 console.log(previousPage)
-                 var offset= parseInt(previousPage.attributes[0].value)
-                 var newOffset= offset-20
-                 previousPage.attributes[0].value=newOffset
-                  getXmen(1009188,newOffset,"X-men")
+            //  nextPageEl.addEventListener("click",function(event){
+            //      var nextPage=event.target.parentNode.parentElement
+            //      var offset= parseInt(nextPage.attributes[0].value)
+            //     nextPage.children[0].classList.remove("disabled")
+            //     var newOffset= offset+20
+            //     nextPage.attributes[0].value=newOffset
+            //     getThor(1009188,newOffset,"Thor")
+            //  })
+            //  previousPageEl.addEventListener("click",function(event){
+            //      var previousPage=event.target.parentElement
+            //      console.log(previousPage)
+            //      var offset= parseInt(previousPage.attributes[0].value)
+            //      var newOffset= offset-20
+            //      previousPage.attributes[0].value=newOffset
+            //       getXmen(1009188,newOffset,"X-men")
                  
-             })
+            //  })
 getComic()
 
 
