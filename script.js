@@ -41,12 +41,22 @@ const currentPageEl=document.getElementById("current")
               .then(function (data) {
                 console.log (data);
                 var h1El=document.createElement("h1")
+                h1El.classList.add("heroName")
                 h1El.textContent=charName
                 cardEl.append(h1El)
                 for (var i=0; i<data.data.results.length; i++){
                   var aEl=document.createElement("a")
                   aEl.setAttribute("href", data.data.results[i].urls[0].url)
                   var imgEl=document.createElement("img")
+                  imgEl.style.margin="3%"
+                  imgEl.classList.add("return-imgs")
+                  
+                  // var newCardEl = document.createElement("div")
+                  // newCardEl.classList.add("card")
+                  // newCardEl.appendChild(imgEl)
+                  // var title = document.createElement("h5")
+                  // title.textContent=data.data.results[i].title
+                  // newCardEl.appendChild(title)
                   var imgUrl=data.data.results[i].images[0]?.path
                   var imgExtension=data.data.results[i].images[0]?.extension
                   if (!imgUrl){
@@ -101,12 +111,15 @@ const currentPageEl=document.getElementById("current")
                  .then(function (data) {
                    console.log (data);
                    var h1El=document.createElement("h1")
+                   h1El.classList.add("heroName")
                    h1El.textContent=charName
                    cardEl.append(h1El)
                    for (var i=0; i<data.data.results.length; i++){
                      var aEl=document.createElement("a")
                      aEl.setAttribute("href", data.data.results[i].urls[0].url)
                      var imgEl=document.createElement("img")
+                     imgEl.style.margin="3%"
+                     imgEl.classList.add("return-imgs")
                      var imgUrl=data.data.results[i].images[0]?.path
                      var imgExtension=data.data.results[i].images[0]?.extension
                      if (!imgUrl){
@@ -159,12 +172,15 @@ const currentPageEl=document.getElementById("current")
                    .then(function (data) {
                      console.log (data);
                      var h1El=document.createElement("h1")
+                     h1El.classList.add("heroName")
                      h1El.textContent=charName
                      cardEl.append(h1El)
                      for (var i=0; i<data.data.results.length; i++){
                        var aEl=document.createElement("a")
                        aEl.setAttribute("href", data.data.results[i].urls[0].url)
                        var imgEl=document.createElement("img")
+                       imgEl.style.margin="3%"
+                       imgEl.classList.add("return-imgs")
                        var imgUrl=data.data.results[i].images[0]?.path
                        var imgExtension=data.data.results[i].images[0]?.extension
                        if (!imgUrl){
@@ -218,12 +234,15 @@ const currentPageEl=document.getElementById("current")
                      .then(function (data) {
                        console.log (data);
                        var h1El=document.createElement("h1")
+                       h1El.classList.add("heroName")
                        h1El.textContent=charName
                        cardEl.append(h1El)
                        for (var i=0; i<data.data.results.length; i++){
                          var aEl=document.createElement("a")
                          aEl.setAttribute("href", data.data.results[i].urls[0].url)
                          var imgEl=document.createElement("img")
+                         imgEl.style.margin="3%"
+                         imgEl.classList.add("return-imgs")
                          var imgUrl=data.data.results[i].images[0]?.path
                          var imgExtension=data.data.results[i].images[0]?.extension
                          if (!imgUrl){
