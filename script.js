@@ -21,6 +21,36 @@ const currentPageEl=document.getElementById("current")
           .then(function (data) {
             console.log (data);
           });
+
+    } 
+    function currentPage(event){
+      var currentPage=event.target.parentNode.parentElement
+      var offset= parseInt(currentPage.attributes[0].value)
+     currentPage.children[0].classList.remove("disabled")
+     var newOffset= offset+20
+     currentPage.attributes[0].value=newOffset
+     getCharacter(id,newOffset,charName)
+    }
+  
+  nextPageEl.addEventListener("click",function(event){
+      var nextPage=event.target.parentNode.parentElement
+      var offset= parseInt(nextPage.attributes[0].value)
+     nextPage.children[0].classList.remove("disabled")
+     var newOffset= offset+20
+     nextPage.attributes[0].value=newOffset
+     getCharacter(id,newOffset,charName)
+  })
+  
+  previousPageEl.addEventListener("click",function(event){
+      var previousPage=event.target.parentElement
+      console.log(previousPage)
+      var offset= parseInt(previousPage.attributes[0].value)
+      var newOffset= offset-20
+      previousPage.attributes[0].value=newOffset
+       getCharacter(id,newOffset,charName)
+      
+  })
+
     }  
     spideyCardEl.addEventListener("click",function(){
      spideyCardEl.style.display="none";
@@ -301,3 +331,4 @@ getComic()
 // center: [-74.5, 40], // starting position [lng, lat]
 // zoom: 9 // starting zoom
 // });
+
