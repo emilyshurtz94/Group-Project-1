@@ -15,16 +15,18 @@
 </head>
 
 <body>
+    <a href="/index.html">
     <nav class='navbar'>
         MARVEL
     </nav>
+    </a>
 
-    <div class="input-group input-group-rounded">
+    <!-- <div class="input-group input-group-rounded">
         <input class="input-group-field" type="search">
         <div class="input-group-button">
             <input type="submit" class="button secondary" value="Search">
         </div>
-    </div>
+    </div> -->
 
     <section class="all-cards">
         <div class="card" id="spideyCard">
@@ -49,8 +51,8 @@
         </div>
     </section>
 
-    <section class="comics" id="card-comics">
-        <ul data-offset="0" class="pagination-pointed pagination text-center" role="navigation" aria-label="Pagination">
+    <section class="comics" style="display:none" id="card-comics">
+        <!-- <ul data-offset="0" class="pagination-pointed pagination text-center" role="navigation" aria-label="Pagination">
             <li id="previousPage" class="pagination-previous disabled">Previous <span class="show-for-sr">page</span>
             </li>
             <li class="current"><span class="show-for-sr">You're on page</span> 1</li>
@@ -59,7 +61,7 @@
 
             <li id="nextPage" class="pagination-next"><a class="pagination-pointed-button" href="#"
                     aria-label="Next page">Next <span class="show-for-sr">page</span></a></li>
-        </ul>
+        </ul> -->
     </section>
     
         <section class="bg-dark p-2">
@@ -86,6 +88,7 @@
              <li> <a style="font-size:20px;" href=" https://www.heroesonline.com/">Heros Aren't Hard to Find, Charlotte NC </a> </li>
              </ul>
         </div>
+
         <section> 
             <div class="container p-3">
                 <div id="map"></div>
@@ -94,7 +97,12 @@
         </section>
         <footer id="footer" class="bg-dark p-4">
     <script src="cardindexscript.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+
+    </section>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
     <script src='https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js'></script>
