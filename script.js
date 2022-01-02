@@ -32,26 +32,26 @@ const currentPageEl=document.getElementById("current")
      getCharacter(id,newOffset,charName)
     }
   
-  nextPageEl.addEventListener("click",function(event){
-      var nextPage=event.target.parentNode.parentElement
-      var offset= parseInt(nextPage.attributes[0].value)
-     nextPage.children[0].classList.remove("disabled")
-     var newOffset= offset+20
-     nextPage.attributes[0].value=newOffset
-     getCharacter(id,newOffset,charName)
-  })
+  // nextPageEl.addEventListener("click",function(event){
+  //     var nextPage=event.target.parentNode.parentElement
+  //     var offset= parseInt(nextPage.attributes[0].value)
+  //    nextPage.children[0].classList.remove("disabled")
+  //    var newOffset= offset+20
+  //    nextPage.attributes[0].value=newOffset
+  //    getCharacter(id,newOffset,charName)
+  // })
   
-  previousPageEl.addEventListener("click",function(event){
-      var previousPage=event.target.parentElement
-      console.log(previousPage)
-      var offset= parseInt(previousPage.attributes[0].value)
-      var newOffset= offset-20
-      previousPage.attributes[0].value=newOffset
-       getCharacter(id,newOffset,charName)
+  // previousPageEl.addEventListener("click",function(event){
+  //     var previousPage=event.target.parentElement
+  //     console.log(previousPage)
+  //     var offset= parseInt(previousPage.attributes[0].value)
+  //     var newOffset= offset-20
+  //     previousPage.attributes[0].value=newOffset
+  //      getCharacter(id,newOffset,charName)
       
-  })
+  // })
 
-    }  
+      
     spideyCardEl.addEventListener("click",function(){
      spideyCardEl.style.display="none";
      thorCardEl.style.display="none";

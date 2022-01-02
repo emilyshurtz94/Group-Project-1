@@ -15,10 +15,10 @@
 </head>
 
 <body>
-    <a href="/index.html">
-    <nav class='navbar'>
-        MARVEL
-    </nav>
+    <a href="./index.html">
+        <nav class='navbar'>
+            MARVEL
+        </nav>
     </a>
 
     <!-- <div class="input-group input-group-rounded">
@@ -63,62 +63,69 @@
                     aria-label="Next page">Next <span class="show-for-sr">page</span></a></li>
         </ul> -->
     </section>
-    
-        <section class="bg-dark p-2">
-            <div class="container">
-                <h2 class="text-light">Find a Comic Store Near You</h2>
-            </div>
-        </section>
-        <section class="map-sidebar"> 
+
+    <section class="bg-dark p-2">
+        <div class="container">
+            <h2 class="text-light">Find a Comic Store Near You</h2>
+        </div>
+    </section>
+    <section class="map-sidebar">
         <div class="sidebar">
-            <div class="heading"> 
+            <div class="heading">
                 <h4>Comic Book Store Locations</h4>
             </div>
             <div id="listings"></div>
             <ul>
-             <li> <a style="font-size:20px;" href="https://www.austinbooks.com/">Austin Books & Comics, Austin TX</a> </li>
-             <li> <a style="font-size:20px;" href="https://atomicbooks.com/">Atomic Books, Balitimore MD</a> </li>
-             <li> <a style="font-size:20px;" href="https://www.heroesonline.com/">Heros Aren't Hard to Find, Charlotte NC </a> </li>
-             <li> <a style="font-size:20px;" href="https://www.quimbys.com/">Quimby's Bookstore, Chicago IL</a> </li>
-             <li> <a style="font-size:20px;" href="http://crescentcitycomics.com/">Crescent City Comics, New Oreleans LA </a> </li>
-             <li> <a style="font-size:20px;" href="http://jhucomicbooks.com/">JHU Comic Books, Staten Island NY </a> </li>
-             <li> <a style="font-size:20px;" href="https://floatingworldcomics.com/">Floating World Comics, Portland OR </a> </li>
-             <li> <a style="font-size:20px;" href="https://www.cartoonart.org/store">Cartoon Art Museum, San Francisco CA </a> </li>
-             <li> <a style="font-size:20px;" href="https://www.bigplanetcomics.com/">Big Planet Comics Washington D.C. </a> </li>
-             <li> <a style="font-size:20px;" href=" https://www.heroesonline.com/">Heros Aren't Hard to Find, Charlotte NC </a> </li>
-             </ul>
+                <li> <a style="font-size:20px;" href="https://www.austinbooks.com/">Austin Books & Comics, Austin TX</a>
+                </li>
+                <li> <a style="font-size:20px;" href="https://atomicbooks.com/">Atomic Books, Balitimore MD</a> </li>
+                <li> <a style="font-size:20px;" href="https://www.heroesonline.com/">Heros Aren't Hard to Find,
+                        Charlotte NC </a> </li>
+                <li> <a style="font-size:20px;" href="https://www.quimbys.com/">Quimby's Bookstore, Chicago IL</a> </li>
+                <li> <a style="font-size:20px;" href="http://crescentcitycomics.com/">Crescent City Comics, New Oreleans
+                        LA </a> </li>
+                <li> <a style="font-size:20px;" href="http://jhucomicbooks.com/">JHU Comic Books, Staten Island NY </a>
+                </li>
+                <li> <a style="font-size:20px;" href="https://floatingworldcomics.com/">Floating World Comics, Portland
+                        OR </a> </li>
+                <li> <a style="font-size:20px;" href="https://www.cartoonart.org/store">Cartoon Art Museum, San
+                        Francisco CA </a> </li>
+                <li> <a style="font-size:20px;" href="https://www.bigplanetcomics.com/">Big Planet Comics Washington
+                        D.C. </a> </li>
+                <li> <a style="font-size:20px;" href=" https://www.heroesonline.com/">Heros Aren't Hard to Find,
+                        Charlotte NC </a> </li>
+            </ul>
+        </div>
+        <div class="container p-3">
+            <div id="map"></div>
         </div>
 
-        <section> 
-            <div class="container p-3">
-                <div id="map"></div>
-            </div>
-        </section>
-        </section>
-        <footer id="footer" class="bg-dark p-4">
-    <script src="cardindexscript.js"></script>
 
     </section>
+    <footer id="footer" class="bg-dark p-4">
+
+
+        </section>
 
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
-    <script src='https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js'></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
+        <script src='https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js'></script>
 
-    <script>
-        mapboxgl.accessToken = 'pk.eyJ1Ijoia2dhcnplbGxvbmkiLCJhIjoiY2t4Z2Y0dGN1MnN6OTJ0cWhueWJlamVyaSJ9.HMaXcCcu3Xz2J3_AXgd-pw';
-        const map = new mapboxgl.Map({
-            container: 'map',
-            style: 'mapbox://styles/mapbox/streets-v11',
-            center: [-110.97, 32.22],
-            zoom: 11
-        });
+        <script>
+            mapboxgl.accessToken = 'pk.eyJ1Ijoia2dhcnplbGxvbmkiLCJhIjoiY2t4Z2Y0dGN1MnN6OTJ0cWhueWJlamVyaSJ9.HMaXcCcu3Xz2J3_AXgd-pw';
+            const map = new mapboxgl.Map({
+                container: 'map',
+                style: 'mapbox://styles/mapbox/streets-v11',
+                center: [-110.97, 32.22],
+                zoom: 11
+            });
 
 
-    </script>
-    <script src="script.js"></script>
+        </script>
+        <script src="script.js"></script>
 </body>
 
 </html>
