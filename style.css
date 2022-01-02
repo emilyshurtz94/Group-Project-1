@@ -151,11 +151,15 @@ body{
   }
   
 #map {
-    width: 66.66%;
-    left: 33.33%;
-    height: 400px;
+    
+    
+    height: 600px;
     border-radius: 10px;
     border: 1px solid black;
+
+}
+.map-sidebar{
+  display: flex;
 
 }
 .sidebar {
@@ -174,7 +178,7 @@ ul {
 }
 
     
-}
+
  .return-imgs:hover{
   box-shadow: 10px 10px 15px grey;
   transform: scale(1.1);
