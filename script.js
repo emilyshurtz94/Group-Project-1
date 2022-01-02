@@ -51,7 +51,7 @@ const currentPageEl=document.getElementById("current")
       
   })
 
-    }  
+      
     spideyCardEl.addEventListener("click",function(){
      spideyCardEl.style.display="none";
      thorCardEl.style.display="none";
