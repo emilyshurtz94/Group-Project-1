@@ -19,9 +19,9 @@
     color: white;
 } 
 
-body{
-      background-image: url('http://clipart-library.com/images/pc7rqpLzi.jpg');
-}
+/* body{
+      background: url('http://clipart-library.com/images/pc7rqpLzi.jpg');
+} */
 
 .input-group-rounded .input-group-field {
     border-radius: 5000px;
